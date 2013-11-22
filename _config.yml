@@ -1,0 +1,12 @@
+baseurl: /
+title: liuyongkang's blog
+permalink: /:year/:month/:day/:title
+markdown: rdiscount
+pygments: true
+paginate: 8
+
+author:
+        name: liuyongkang
+        email: liuyongkanglinux@gmail.com
+        weibo: http://www.weibo.com/mengsuihonglan
+        github: http://github.com/liuyongkang
