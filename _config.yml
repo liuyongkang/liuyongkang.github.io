@@ -1,4 +1,3 @@
-baseurl: /
 title: liuyongkang's blog
 permalink: /:year/:month/:day/:title
 markdown: rdiscount
