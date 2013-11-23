@@ -1,4 +1,6 @@
 title: liuyongkang's blog
+url: http://liuyongkang.github.com
+feed: /atom.xml
 permalink: /:year/:month/:day/:title
 markdown: rdiscount
 pygments: true
@@ -9,3 +11,7 @@ author:
         email: liuyongkanglinux@gmail.com
         weibo: http://www.weibo.com/mengsuihonglan
         github: http://github.com/liuyongkang
+
+copyright:
+    - Design by <a href="http://www.pizn.net" rel="friend" title="pizn" target="_blank">PIZn</a>
+    - "&copy; Copyright 2011, PIZn. All Rights Reserved."
