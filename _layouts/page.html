@@ -1,6 +1,36 @@
 ---
 layout:           default
 ---
-<section id="page">
-  {{ content }}
-</section>
+<div id="head">
+	<div class='logo left'>
+		<a href="/" title="Home">liuyongkang.github.io</a>
+	</div>
+	<div id="header">
+		<div class="nav right">
+			<a href="/" title="Home" rel="nofollow">Home</a>
+			<a href="/archives.html" rel="bookmark" title="Archives">Archives</a>
+			<a href="/ChangeLog.html" rel="bookmark" title="ChangeLog">ChangeLog</a>
+			<a href="{{ site.feed }}" rel="feed" target="_blank">Feed</a>
+		</div><!-- .nav -->
+	</div><!-- #header -->
+</div><!-- #head -->
+<div id="content">
+		{{ content }}
+</div><!-- #content -->
+<div id="foot">
+	<div id="footer">
+		<h4>Contact Me</h4>
+		<div class="my-link">
+			<a href="" target="_blank" title="liuyongkang's blog" onclick="alert('liuyongkanglinux 在 gamil');return false;">email&nbsp;&raquo;</a>
+			<a href="http://liuyongkang.github.io" target="_blank" title="liuyongkang's blog" rel="friend">liuyongkang&nbsp;&raquo;</a>
+			<a href="http://www.github.com/liuyongkang" target="_blank" title="liuyongkang's github" rel="nofollow">GitHub&nbsp;&raquo;</a>
+			<a href="http://www.twitter.com/mengsuihonglan" target="_blank" title="liuyongkang's twitter" rel="nofollow">Twitter&nbsp;&raquo;</a>
+			<a href="http://www.weibo.com/mengsuihonglan" target="_blank" title="liuyongkang's weibo" rel="nofollow">新浪微博&nbsp;&raquo;</a>
+		</div>
+		<div class="copyright">
+			{% for line in site.copyright %}
+			<p>{{ line }}</p>
+			{% endfor %}
+		</div>
+	</div><!-- #footer -->
+</div><!-- #foot -->
