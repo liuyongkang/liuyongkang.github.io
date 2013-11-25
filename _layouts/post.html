@@ -4,15 +4,18 @@ layout: default
 <div class="entry">
 	{{ content }}
 </div><!-- .entry -->
-<div class="disqus">
-	<div id="disqus_thread"></div>
-	<script type="text/javascript">
-var disqus_shortname = 'liuyongkangblog';
-(function() {
- var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
- dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
- (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
- })();
-	</script>
-	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-</div>
+<div id="disqus_container"> 
+    <a href="#" class="comment" onclick="return false;">点击查看评论</a>
+    <div id="disqus_thread"></div>
+</div> 
+<script type="text/javascript">
+    BYB.readyFunction = function(){
+        $(document).ready(function(){
+            $('#disqus_container .comment').on('click',function(){
+                var disqus_shortname = 'beiyuu';
+                var that = this;
+                BYB.includeScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()});
+            })
+        });
+    };
+</script>
