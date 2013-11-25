@@ -9,6 +9,9 @@
 <link rel="stylesheet" href="/css/default.css" type="text/css" />
 <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
 <link rel="shortcut icon" href="" type="image/x-icon" />
+<script type="text/javascript">
+var BYB = {}
+</script>
 </head>
 <body>
 <div id="head">
@@ -46,5 +49,35 @@
 		</div>
 	</div><!-- #footer -->
 </div><!-- #foot -->
+<script type="text/javascript">
+BYB.includeScript = function(file,callback){
+	var _doc = document.getElementsByTagName('head')[0];
+	var js = document.createElement('script');
+	js.setAttribute('type', 'text/javascript');
+	js.setAttribute('src', file);
+	_doc.appendChild(js);
+
+	if (!/*@cc_on!@*/0) { //if not IE
+		//Firefox2、Firefox3、Safari3.1+、Opera9.6+ support js.onload
+		js.onload = function () {
+			callback();
+		}
+	} else {
+		//IE6、IE7 support js.onreadystatechange
+		js.onreadystatechange = function () {
+			if (js.readyState == 'loaded' || js.readyState == 'complete') {
+				callback();
+			}
+		}
+	}
+	return false;
+}
+
+if(!window.jQuery){
+	BYB.includeScript('http://beiyuu.com/js/jquery-1.7.1.min.js',BYB.readyFunction);
+}else{
+	BYB.readyFunction();
+}
+</script>
 </body>
 </html>
