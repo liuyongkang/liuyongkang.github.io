@@ -1,5 +1,7 @@
+auto: true
+
 title: liuyongkang's blog
-url: http://liuyongkang.github.io
+url: http://liuyongkang.org
 feed: /atom.xml
 permalink: /:year/:month/:day/:title
 markdown: rdiscount
@@ -13,4 +15,4 @@ author:
         github: http://github.com/liuyongkang
 
 copyright:
-    - Design by <a href="http://liuyongkang.github.io" rel="friend" title="liuyongkang" target="_blank">liuyongkang</a> &copy; Copyright 2013
+    - Design by <a href="http://liuyongkang.org" rel="friend" title="liuyongkang" target="_blank">liuyongkang</a> &copy; Copyright 2013
