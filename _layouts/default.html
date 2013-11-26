@@ -3,47 +3,40 @@
 <head>
 <meta charset="utf-8" />
 <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
-<meta name="generator" content="Jekyll" />
-<meta name="author" content="{{ site.author.name }}" />
-<meta name="description" content="{{ site.description }}" />
+<meta name="author" content="Liu Yongkang" />
+<meta name="description" content="Liu Yongkang's Blog" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 <link rel="stylesheet" href="/css/default.css" type="text/css" />
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
 <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
-<link rel="shortcut icon" href="" type="image/x-icon" />
-<script type="text/javascript">
-var BYB = {}
-</script>
+<script src="/js/jquery-1.7.1.min.js" type="text/javascript"></script>
 </head>
 <body>
+
+<div class="home-menu">
+	<div class="home-icon-con">
+		<a class="home-menu-icon" href="/">Liu Yongkang</a>
+		<a class="home-follow" href="#" title="Contact Me">+</a>
+	</div>
+	<div class="home-contact">
+		<a href="http://weibo.com/mengsuihonglan/" target="_blank" style="margin-left:-5px;"><img src="http://www.weibo.com/favicon.ico" alt="" width="25"/></a>
+	</div>
+</div>
+
 {{ content }}
+
 <script type="text/javascript">
-BYB.includeScript = function(file,callback){
-	var _doc = document.getElementsByTagName('head')[0];
-	var js = document.createElement('script');
-	js.setAttribute('type', 'text/javascript');
-	js.setAttribute('src', file);
-	_doc.appendChild(js);
+$(function(){
+			$('.home-follow').click(function(e){
+				e.preventDefault();
 
-	if (!/*@cc_on!@*/0) { //if not IE
-		//Firefox2、Firefox3、Safari3.1+、Opera9.6+ support js.onload
-		js.onload = function () {
-			callback();
-		}
-	} else {
-		//IE6、IE7 support js.onreadystatechange
-		js.onreadystatechange = function () {
-			if (js.readyState == 'loaded' || js.readyState == 'complete') {
-				callback();
-			}
-		}
-	}
-	return false;
-}
-
-if(!window.jQuery){
-	BYB.includeScript('http://liuyongkang.github.io/js/jquery-1.7.1.min.js',BYB.readyFunction);
-}else{
-	BYB.readyFunction();
-}
+				if($('.home-contact').is(':visible')){
+				$('.home-contact').slideUp(100);
+				}else{
+				$('.home-contact').slideDown(100);
+				}
+				});
+			})
 </script>
 </body>
 </html>
