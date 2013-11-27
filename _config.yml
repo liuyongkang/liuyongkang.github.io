@@ -3,7 +3,7 @@ auto: true
 title: liuyongkang's blog
 url: http://liuyongkang.org
 feed: /atom.xml
-permalink: /:year/:month/:day/:title
+permalink: /:categories/:title
 markdown: rdiscount
 pygments: true
 paginate: 8
