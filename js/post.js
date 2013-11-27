@@ -22,14 +22,14 @@ $(document).ready(function(){
     };
 
     $('pre').addClass('prettyprint linenums'); //添加Google code Hight需要的class
-
+/*
     window.disqus_shortname = 'liuyongkang'; // required: replace example with your forum shortname
     $('#disqus_container .comment').on('click',function(){
         $(this).html('加载中...');
         var that = this;
         $.getScript('http://' + disqus_shortname + '.disqus.com/embed.js',function(){$(that).remove()});
     });
-
+*/
     $('.entry a').each(function(index,element){
         var href = $(this).attr('href');
         if(href){
@@ -200,10 +200,11 @@ $(document).ready(function(){
         prettyPrint();
     });
 
+    /*
     if(/\#comment/.test(location.hash)){
         $('#disqus_container .comment').trigger('click');
     }
-
+*/
     if(/css3-animation/.test(location.href)){
         $("head").append("<link rel='stylesheet' type='text/css' href='/css/css3-ani.css'/>");
         $.getScript('/js/css3-ani.js',function(){});
