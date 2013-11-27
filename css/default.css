@@ -94,7 +94,7 @@ pre ol{margin-left:25px;list-style-type:decimal;}
 .index-content h2 { font-size:20px; margin-bottom:15px; }
 .index-content h2 a { color:#444 }
 .index-content h2 a:hover { color:#E50053; text-decoration:none; }
-.index-content .title-desc {color:#999;font-size:14px;line-height:1.6em;}
+.index-content .title-desc {color:#999;font-size:14px;line-height:1.6em;color:rgb(60,60,60)}
 
 .index-content .artical-cate { width:70%; margin:0 auto; }
 .index-content .artical-cate li { display:inline-block; *float:left; zoom:1; font-size:18px; width:32%; cursor:pointer; }
@@ -134,7 +134,7 @@ h3.about {color:#777;margin-top:20px;font-size:22px;margin-bottom:10px}
 .home-follow { margin-left:2px; line-height:38px; padding:0 8px; display:inline-block; color:#fff; font-size:1px; background:#000;  }
 .home-menu-icon:hover,
 .home-follow:hover { color:#fff; text-decoration:none; }
-.home-contact { color:#fff; margin-top:2px; background:#000; padding:8px 0 7px; text-align:center; display:none;}
+.home-contact { color:#fff; margin-top:2px; background:#444; padding:8px 0 7px; text-align:center; display:none;}
 .home-contact a { width:30px; display:inline-block; }
 .home-contact img { width:18px; }
 
