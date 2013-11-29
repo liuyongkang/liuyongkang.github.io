@@ -53,7 +53,7 @@ pre ol{margin-left:25px;list-style-type:decimal;}
 /****************entry style**************/
 .sidenav { width:240px; background:#fff; float:right; padding:20px; margin-bottom:50px; box-shadow:0 1px 4px #ccc; }
 .sidenav h2 { font-size:18px; color:#333; margin-bottom:15px; }
-.sidenav ul { margin-bottom:50px; }
+.sidenav ul { margin-bottom:30px; }
 .sidenav li { margin-bottom:12px; }
 .sidenav a { color:#555; font-size:14px; display:block;}
 .entry{margin-bottom:80px;width:680px; float:left; background:#fff; padding:30px; box-shadow:0 2px 6px #ccc; }
@@ -88,6 +88,10 @@ pre ol{margin-left:25px;list-style-type:decimal;}
     background-image:url('https://d233eq3e3p3cv0.cloudfront.net/max/1000/0*kTUZamBulGQZg1MW.jpeg')
 }
 .index-content .section { margin-left:30%; padding-top:80px; padding-right:15%; ;}
+
+.friend-list { width:100px;float:left; }
+.friend-list li { margin-left:20px; }
+.friend-list a { text-decoration:none; }
 
 .index-content .artical-list { width:70%; margin:0 auto; }
 .index-content .artical-list li { margin-bottom:70px; }
