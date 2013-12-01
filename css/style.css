@@ -561,7 +561,7 @@ a {
 }
 @font-face {
         font-family:"my";
-        src:url("/css/fonts/my.ttf");
+        src:url("http://liuyongkang.oss-cn-hangzhou.aliyuncs.com/my.ttf");
         font-weight:normal;
         font-style:normal;
 }
