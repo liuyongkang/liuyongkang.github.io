@@ -353,7 +353,7 @@ body {
 body {
   position: relative;
   overflow: hidden;
-  background: url("/images/background.jpg");
+  background: url("http://liuyongkang.oss-cn-hangzhou.aliyuncs.com/background.jpg");
 }
 
 a {
@@ -517,7 +517,7 @@ a {
   }
 
   body {
-    background: url("/images/background.jpg") 50% 50% no-repeat;
+    background: url("http://liuyongkang.oss-cn-hangzhou.aliyuncs.com/background.jpg") 50% 50% no-repeat;
     background-size: cover;
   }
 
