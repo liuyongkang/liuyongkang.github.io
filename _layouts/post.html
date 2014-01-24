@@ -70,7 +70,7 @@ body { background:#e8e8e8; }
 	<div class="sidenav">
 		<h2>Blog</h2>
 		<ul class="artical-list">
-			{% for post in site.categories.blog%}
+			{% for post in site.categories.blog limit:5 %}
 			<li><a href="{{ post.url }}">{{ post.title }}</a></li>
 			{% endfor %}
 		</ul>
