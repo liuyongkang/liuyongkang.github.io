@@ -16,7 +16,7 @@ tag: ['is_sorted', 'stl']
 ```cpp
 std::vector<int> val = {1, 2, 3};
 
-std::cout << is_sorted(val.begin(), val.end(), std::less<int>()) << std::endl;
+std::cout << std::is_sorted(val.begin(), val.end(), std::less<int>()) << std::endl;
 ```
 
 结果当然是 `1` ，可是这样写就正确吗？
